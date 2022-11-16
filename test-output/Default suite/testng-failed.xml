@@ -5,12 +5,15 @@
     <classes>
       <class name="com.test.cases.TestCase1">
         <methods>
+          <include name="ValidateLogo"/>
           <include name="ValidateFeatures"/>
           <include name="ValidateContactUs"/>
           <include name="browserTearUp"/>
           <include name="BrowserStart"/>
+          <include name="ValidateLogin"/>
           <include name="ValidateCustomer"/>
           <include name="ValidatePricing"/>
+          <include name="ValidateSignUp"/>
         </methods>
       </class> <!-- com.test.cases.TestCase1 -->
     </classes>

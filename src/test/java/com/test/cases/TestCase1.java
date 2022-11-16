@@ -18,41 +18,49 @@ public class TestCase1 extends BaseClass {
 	    hp = new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOflogo());
 		hp.clickonlogo();
+		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 2)
 	public void ValidateLogin() {
 		hp=new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOfLogin());
 		hp.clickonLogIn();
+		backword();
+		
 	}
 	@Test(description = "validate freeCrm homepage", priority = 3)
 	public void ValidateSignUp() {
 		hp=new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOfSignUp());
 		hp.clickonSignUp();
+		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 4)
 	public void ValidateCustomer() {
 		hp=new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOfCustomer());
 		hp.clickonCustomer();
+		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 5)
 	public void ValidateContactUs() {
 		hp=new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOfcontactus());
 		hp.clickonContactUs();
+		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 6)
 	public void ValidateFeatures() {
 		hp=new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOfFeatures());
 		hp.clickonFeatures();
+		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 7)
 	public void ValidatePricing() {
 		hp=new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOfPricing());
 		hp.clickonpricing();
+		backword();
 	}
 }

@@ -94,6 +94,8 @@ public class HomePage {
 	public void clickonContactUs() {
 		contactus.click();
 	}
+	
+
 	public String getTile() {
 		String s=driver.getTitle();
 		return s;

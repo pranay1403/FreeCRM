@@ -66,6 +66,10 @@ public class BaseClass {
 
 	}
 	
+	public void backword( ) {
+		driver.navigate().back();
+	}
+	
 	@AfterTest(alwaysRun = true)
 	public void browserTearUp() {
 		
