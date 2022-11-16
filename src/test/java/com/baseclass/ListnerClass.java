@@ -27,7 +27,7 @@ public class ListnerClass implements ITestListener {
 	public void configureReport() {
 
 		String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
-		String reportName = "LeetCodeFramework-" + timestamp + ".html";
+		String reportName = "FreeCRM-" + timestamp + ".html";
 		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "//Reports//" + reportName);
         prop=new ReadProp();
 		reports = new ExtentReports();
