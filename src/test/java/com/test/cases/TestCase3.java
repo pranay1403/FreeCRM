@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.baseclass.BaseClass;
+import com.page.classes.CompaniesPage;
 import com.page.classes.HomePage;
 import com.page.classes.LoginPage;
 import com.page.classes.ProfilePage;
@@ -13,6 +14,7 @@ public class TestCase3 extends BaseClass {
 	HomePage hp;
 	LoginPage lp;
 	ProfilePage pp;
+	
 
 	@Test(priority=1)
 	public void intiateforvalidation() {
@@ -21,6 +23,7 @@ public class TestCase3 extends BaseClass {
 		lp = new LoginPage(driver);
 		lp.Entercredentials();
 		lp.clickOnloginbtn();
+		
 	}
 
 	@Test(priority = 2)
