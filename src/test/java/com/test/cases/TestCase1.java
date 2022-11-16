@@ -18,7 +18,7 @@ public class TestCase1 extends BaseClass {
 	    hp = new HomePage(driver);
 		Assert.assertTrue(hp.visiabilityOflogo());
 		hp.clickonlogo();
-		backword();
+        backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 2)
 	public void ValidateLogin() {

@@ -66,7 +66,7 @@ public class BaseClass {
 
 	}
 	
-	public void backword( ) {
+	public  void backword( ) {
 		driver.navigate().back();
 	}
 	
