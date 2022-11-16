@@ -69,6 +69,12 @@ public class LoginPage {
 	public void clickOnSignUp() {
 		signup.click();
 	}
+	public void clickOnEmail() {
+		email.click();
+	}
+	public void clickonPassword() {
+		password.click();
+	}
 	public void Entercredentials() {
 		email.sendKeys(username);
 		password.sendKeys(pass);

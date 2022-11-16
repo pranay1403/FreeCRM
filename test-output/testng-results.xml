@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T13:14:49 IST" name="Default suite" finished-at="2022-11-16T13:15:26 IST" duration-ms="36493">
+  <suite started-at="2022-11-16T13:54:01 IST" name="Default suite" finished-at="2022-11-16T13:54:36 IST" duration-ms="34311">
     <groups>
     </groups>
-    <test started-at="2022-11-16T13:14:49 IST" name="Default test" finished-at="2022-11-16T13:15:26 IST" duration-ms="36493">
-      <class name="com.test.cases.TestCase1">
-        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:14:50 IST" name="BrowserStart" finished-at="2022-11-16T13:15:00 IST" duration-ms="10160" status="PASS">
+    <test started-at="2022-11-16T13:54:01 IST" name="Default test" finished-at="2022-11-16T13:54:36 IST" duration-ms="34311">
+      <class name="com.test.cases.TestCase2">
+        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:02 IST" name="BrowserStart" finished-at="2022-11-16T13:54:13 IST" duration-ms="10962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserStart -->
-        <test-method signature="ValidateLogo()[pri:1, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:00 IST" name="ValidateLogo" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:03 IST" duration-ms="2735" status="PASS">
+        <test-method signature="validateEmail()[pri:1, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:13 IST" name="validateEmail" description="Validate Login Fuctionality Of FreeCRM" finished-at="2022-11-16T13:54:19 IST" duration-ms="6091" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateLogo -->
-        <test-method signature="ValidateLogin()[pri:2, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:03 IST" name="ValidateLogin" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:08 IST" duration-ms="5062" status="PASS">
+        </test-method> <!-- validateEmail -->
+        <test-method signature="validatePassword()[pri:2, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:19 IST" name="validatePassword" description="Validate Login Fuctionality Of FreeCRM" finished-at="2022-11-16T13:54:21 IST" duration-ms="1922" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateLogin -->
-        <test-method signature="ValidateSignUp()[pri:3, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:08 IST" name="ValidateSignUp" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:12 IST" duration-ms="3648" status="PASS">
+        </test-method> <!-- validatePassword -->
+        <test-method signature="validateLoginbtn()[pri:3, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:21 IST" name="validateLoginbtn" description="Validate Login Fuctionality Of FreeCRM" finished-at="2022-11-16T13:54:22 IST" duration-ms="1822" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateSignUp -->
-        <test-method signature="ValidateCustomer()[pri:4, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:12 IST" name="ValidateCustomer" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:15 IST" duration-ms="2822" status="PASS">
+        </test-method> <!-- validateLoginbtn -->
+        <test-method signature="validateForgotpass()[pri:4, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:22 IST" name="validateForgotpass" description="Validate Login Fuctionality Of FreeCRM" finished-at="2022-11-16T13:54:27 IST" duration-ms="4353" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCustomer -->
-        <test-method signature="ValidateContactUs()[pri:5, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:15 IST" name="ValidateContactUs" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:18 IST" duration-ms="3529" status="PASS">
+        </test-method> <!-- validateForgotpass -->
+        <test-method signature="validateSignUp()[pri:5, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:27 IST" name="validateSignUp" description="Validate Login Fuctionality Of FreeCRM" finished-at="2022-11-16T13:54:33 IST" duration-ms="6540" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateContactUs -->
-        <test-method signature="ValidateFeatures()[pri:6, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:18 IST" name="ValidateFeatures" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:21 IST" duration-ms="2912" status="PASS">
+        </test-method> <!-- validateSignUp -->
+        <test-method signature="ValidateLoginFuctionality()[pri:6, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:33 IST" name="ValidateLoginFuctionality" description="Validate Login Fuctionality Of FreeCRM" finished-at="2022-11-16T13:54:35 IST" duration-ms="1953" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateFeatures -->
-        <test-method signature="ValidatePricing()[pri:7, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:21 IST" name="ValidatePricing" description="validate freeCrm homepage" finished-at="2022-11-16T13:15:25 IST" duration-ms="3882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatePricing -->
-        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase1@54422e18]" started-at="2022-11-16T13:15:25 IST" name="browserTearUp" finished-at="2022-11-16T13:15:26 IST" duration-ms="839" status="PASS">
+        </test-method> <!-- ValidateLoginFuctionality -->
+        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase2@799f10e1]" started-at="2022-11-16T13:54:35 IST" name="browserTearUp" finished-at="2022-11-16T13:54:36 IST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearUp -->
-      </class> <!-- com.test.cases.TestCase1 -->
+      </class> <!-- com.test.cases.TestCase2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
