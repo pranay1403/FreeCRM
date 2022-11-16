@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T16:58:54 IST" name="Default suite" finished-at="2022-11-16T16:59:17 IST" duration-ms="22387">
+  <suite started-at="2022-11-16T23:21:38 IST" name="Default suite" finished-at="2022-11-16T23:22:04 IST" duration-ms="25900">
     <groups>
     </groups>
-    <test started-at="2022-11-16T16:58:54 IST" name="Default test" finished-at="2022-11-16T16:59:17 IST" duration-ms="22387">
-      <class name="com.test.cases.TestCase3">
-        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase3@7ef82753]" started-at="2022-11-16T16:58:54 IST" name="BrowserStart" finished-at="2022-11-16T16:59:06 IST" duration-ms="11551" status="PASS">
+    <test started-at="2022-11-16T23:21:38 IST" name="Default test" finished-at="2022-11-16T23:22:04 IST" duration-ms="25900">
+      <class name="com.test.cases.TestCase4">
+        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase4@2a65fe7c]" started-at="2022-11-16T23:21:38 IST" name="BrowserStart" finished-at="2022-11-16T23:21:47 IST" duration-ms="8435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserStart -->
-        <test-method signature="ValidateCalender()[pri:1, instance:com.test.cases.TestCase3@7ef82753]" started-at="2022-11-16T16:59:06 IST" name="ValidateCalender" finished-at="2022-11-16T16:59:14 IST" duration-ms="8310" status="PASS">
+        <test-method signature="initialSetup()[pri:1, instance:com.test.cases.TestCase4@2a65fe7c]" started-at="2022-11-16T23:21:47 IST" name="initialSetup" finished-at="2022-11-16T23:21:56 IST" duration-ms="9594" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCalender -->
-        <test-method signature="ValidateContact()[pri:2, instance:com.test.cases.TestCase3@7ef82753]" started-at="2022-11-16T16:59:14 IST" name="ValidateContact" finished-at="2022-11-16T16:59:15 IST" duration-ms="543" status="PASS">
+        </test-method> <!-- initialSetup -->
+        <test-method signature="addEvents()[pri:0, instance:com.test.cases.TestCase4@2a65fe7c]" started-at="2022-11-16T23:21:56 IST" name="addEvents" description="Event Add in calender" finished-at="2022-11-16T23:22:02 IST" depends-on-methods="com.test.cases.TestCase4.initialSetup" duration-ms="6278" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateContact -->
-        <test-method signature="ValidateCompany()[pri:3, instance:com.test.cases.TestCase3@7ef82753]" started-at="2022-11-16T16:59:15 IST" name="ValidateCompany" finished-at="2022-11-16T16:59:16 IST" duration-ms="550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCompany -->
-        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase3@7ef82753]" started-at="2022-11-16T16:59:16 IST" name="browserTearUp" finished-at="2022-11-16T16:59:17 IST" duration-ms="1275" status="PASS">
+        </test-method> <!-- addEvents -->
+        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase4@2a65fe7c]" started-at="2022-11-16T23:22:02 IST" name="browserTearUp" finished-at="2022-11-16T23:22:04 IST" duration-ms="1238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearUp -->
-      </class> <!-- com.test.cases.TestCase3 -->
+      </class> <!-- com.test.cases.TestCase4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
