@@ -4,11 +4,12 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CalenderPage {
-
+    Actions ac;
 	@FindBy(xpath = "//button[@class='ui linkedin button']")
 	private WebElement create;
 
@@ -269,6 +270,7 @@ public class CalenderPage {
 	public void enterCases() {
 
 		cases.sendKeys("12");
+		
 	}
 	public void enterReminderTime() {
 	
@@ -281,10 +283,40 @@ public class CalenderPage {
 	public void enterCompany() {
 	
 		comp.sendKeys("Bytesquare Technology Kharadi");
+		
 	}
 	public void enterIdentifier() {
 		
 		indentifier.sendKeys("14112");
 	}
+	public WebElement Company() {
+		WebElement c=this.comp;
+		return c;
+	}
+	public WebElement tag() {
+		WebElement c=this.tag;
+		return c;
+	}
+	public WebElement Task() {
+		WebElement c=this.task;
+		return c;
+	}
+	public WebElement Deal() {
+		WebElement c=this.deal;
+		return c;
+	}
+	public WebElement Case() {
+		WebElement c=this.cases;
+		return c;
+	}
+	public WebElement Participants() {
+		WebElement c=this.participant;
+		return c;
+	}
+	public WebElement Identifier() {
+		WebElement c=this.indentifier;
+		return c;
+	}
+	
 
 }

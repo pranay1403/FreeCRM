@@ -24,10 +24,11 @@ public class TestCase4 extends BaseClass {
 		lp.clickOnloginbtn();
 		pp=new ProfilePage(driver);
 		pp.clickoncalender();
+		
 	}
 	
 	@Test(description="Event Add in calender",dependsOnMethods = "initialSetup")
-	public void addEvents() {
+	public void addEvents() throws InterruptedException {
 		cp=new CalenderPage(driver);
 		try {
 			Thread.sleep(2000);
@@ -45,6 +46,7 @@ public class TestCase4 extends BaseClass {
 		Assert.assertTrue(cp.visiabilityofTags());
 		cp.clickonTag();
 		cp.enterTags();
+		Enter(driver, cp.tag());
 		Assert.assertTrue(cp.visiabilityofDiscription());
 		cp.clickonDescription();
 		cp.enterDescription();
@@ -56,27 +58,34 @@ public class TestCase4 extends BaseClass {
 //		Assert.assertTrue(cp.visiabilityofDeal());
 		cp.clickonDeal();
 		cp.enterDealdetails();
+		Enter(driver, cp.Deal());
 //		Assert.assertTrue(cp.visiabilityofCase());
 		cp.clickonCase();
 		cp.enterCases();
+		Enter(driver, cp.Case());
 //		Assert.assertTrue(cp.visiabilityofTask());
 		cp.clickonTask();
 		cp.enterTaskDetails();
+		Enter(driver, cp.Task());
 //		Assert.assertTrue(cp.visiabilityofReminder());
 		cp.clickonReminder();
 		cp.enterReminderTime();
 //		Assert.assertTrue(cp.visiabilityofParticipant());
 		cp.clickonParticipants();
 		cp.enterParticipants();
+		Enter(driver, cp.Participants());
 //		Assert.assertTrue(cp.visiabilityofCompany());
 		cp.clickonCompany();
 		cp.enterCompany();
+		Enter(driver, cp.Company());
+//		Thread.sleep(2000);
 //		Assert.assertTrue(cp.visiabilityofIndentifier());
 		cp.clickonIdentifier();
 		cp.enterIdentifier();
+		Enter(driver, cp.Identifier());
 //		Assert.assertTrue(cp.visiabilityofSave());
 		cp.clickonSave();
-		
+		Thread.sleep(5000);
 		
 	}
 }

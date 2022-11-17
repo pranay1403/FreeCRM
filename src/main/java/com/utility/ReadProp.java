@@ -9,11 +9,11 @@ public class ReadProp {
 
 	public ReadProp() {
 
-<<<<<<< HEAD
+
 		String path = "E:\\eclipse-workspace4\\com.FreeCRM\\Configfile\\testdata.properties";
-=======
-		String path = "E:\\Crm framework\\FreeCRM\\Configfile\\testdata.properties";
->>>>>>> 60378a28f9276207e731e284d02d2bf7e95e5317
+
+		String path1 = "E:\\Crm framework\\FreeCRM\\Configfile\\testdata.properties";
+
 		prop = new Properties();
 
 		try {
