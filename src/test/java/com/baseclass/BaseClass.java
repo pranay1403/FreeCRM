@@ -94,8 +94,8 @@ public class BaseClass {
 	}
 
 	@AfterTest(alwaysRun = true)
-	public void browserTearUp() {
-
+	public void browserTearUp() throws InterruptedException {
+		Thread.sleep(5000);
 		driver.quit();
 	}
 }

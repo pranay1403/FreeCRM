@@ -10,7 +10,7 @@ public class ReadProp {
 	public ReadProp() {
 
 
-		String path = "E:\\ST\\project\\CRM project\\FreeCRM\\Configfile\\testdata.properties";
+		String path = "E:\\eclipse-workspace4\\com.FreeCRM\\Configfile\\testdata.properties";
 
 
 
@@ -38,6 +38,14 @@ public class ReadProp {
 	public String password() {
 		String password=prop.getProperty("password");
 		return password;
+	}
+	public String ExpectedMonthYear() {
+		String v=prop.getProperty("ExpextedMonthYear");
+		return v;
+	}
+	public String ExpectedDate() {
+		String v=prop.getProperty("ExpectedDate");
+		return v;
 	}
 
 }
