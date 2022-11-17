@@ -9,7 +9,11 @@ public class ReadProp {
 
 	public ReadProp() {
 
+
 		String path = "E:\\ST\\project\\CRM project\\FreeCRM\\Configfile\\testdata.properties";
+
+
+
 		prop = new Properties();
 
 		try {
