@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="18" passed="0" failed="0" skipped="18">
   <reporter-output>
   </reporter-output>
@@ -1247,6 +1248,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- browserTearUp -->
       </class> <!-- com.test.cases.TestCase10 -->
+=======
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-18T20:23:42 IST" name="Default suite" finished-at="2022-11-18T20:24:26 IST" duration-ms="44679">
+    <groups>
+    </groups>
+    <test started-at="2022-11-18T20:23:42 IST" name="Default test" finished-at="2022-11-18T20:24:26 IST" duration-ms="44679">
+      <class name="com.test.cases.TestCase8">
+        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-18T20:23:42 IST" name="BrowserStart" finished-at="2022-11-18T20:23:55 IST" duration-ms="13224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserStart -->
+        <test-method signature="intialsetup()[pri:1, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-18T20:23:55 IST" name="intialsetup" finished-at="2022-11-18T20:24:02 IST" duration-ms="6464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialsetup -->
+        <test-method signature="Visibilityofcancel()[pri:2, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-18T20:24:02 IST" name="Visibilityofcancel" finished-at="2022-11-18T20:24:02 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Visibilityofcancel -->
+        <test-method signature="entercred()[pri:3, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-18T20:24:02 IST" name="entercred" finished-at="2022-11-18T20:24:19 IST" duration-ms="17281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entercred -->
+        <test-method signature="clickonsave()[pri:4, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-18T20:24:19 IST" name="clickonsave" finished-at="2022-11-18T20:24:20 IST" depends-on-methods="com.test.cases.TestCase8.entercred" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonsave -->
+        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-18T20:24:20 IST" name="browserTearUp" finished-at="2022-11-18T20:24:26 IST" duration-ms="6553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearUp -->
+      </class> <!-- com.test.cases.TestCase8 -->
+>>>>>>> 5da9b6172a072356c22b487dc0ab0d342ec97f00
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
