@@ -3,14 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.cases.TestCase7">
+      <class name="com.test.cases.TestCase10">
         <methods>
+          <include name="validateAmount"/>
+          <include name="validateNextStep"/>
+          <include name="validateCompany"/>
+          <include name="validateAssignTo"/>
+          <include name="initialSetup"/>
+          <include name="validateProducts"/>
+          <include name="validateTags"/>
+          <include name="validateTitle"/>
+          <include name="validateStage"/>
+          <include name="validateStatus"/>
+          <include name="validateIdentifier"/>
+          <include name="validateDescription"/>
           <include name="browserTearUp"/>
+          <include name="validateCreatebtn"/>
+          <include name="validateContacts"/>
+          <include name="validateType"/>
+          <include name="validateSource"/>
           <include name="BrowserStart"/>
-          <include name="validateMonthbtn"/>
-          <include name="validateWeekbtn"/>
+          <include name="validateProbabiblity"/>
+          <include name="validateCommission"/>
         </methods>
-      </class> <!-- com.test.cases.TestCase7 -->
+      </class> <!-- com.test.cases.TestCase10 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
