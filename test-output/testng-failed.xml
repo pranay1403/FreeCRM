@@ -3,43 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.test.cases.TestCase10">
         <methods>
-          <include name="validateAmount"/>
-          <include name="validateNextStep"/>
-          <include name="validateCompany"/>
-          <include name="validateAssignTo"/>
-          <include name="initialSetup"/>
-          <include name="validateProducts"/>
-          <include name="validateTags"/>
-          <include name="validateTitle"/>
-          <include name="validateStage"/>
           <include name="validateStatus"/>
-          <include name="validateIdentifier"/>
-          <include name="validateDescription"/>
           <include name="browserTearUp"/>
           <include name="validateCreatebtn"/>
-          <include name="validateContacts"/>
           <include name="validateType"/>
           <include name="validateSource"/>
+          <include name="validateAssignTo"/>
           <include name="BrowserStart"/>
-          <include name="validateProbabiblity"/>
-          <include name="validateCommission"/>
+          <include name="validateTags"/>
+          <include name="validateStage"/>
         </methods>
       </class> <!-- com.test.cases.TestCase10 -->
-=======
-      <class name="com.test.cases.TestCase8">
-        <methods>
-          <include name="entercred"/>
-          <include name="browserTearUp"/>
-          <include name="clickonsave"/>
-          <include name="BrowserStart"/>
-          <include name="Visibilityofcancel"/>
-          <include name="intialsetup"/>
-        </methods>
-      </class> <!-- com.test.cases.TestCase8 -->
->>>>>>> 5da9b6172a072356c22b487dc0ab0d342ec97f00
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

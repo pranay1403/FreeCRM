@@ -334,6 +334,10 @@ public class CreateNewDealPage {
 		WebElement b=tag;
 		return b;
 	}
+	public WebElement Create() {
+		WebElement c=this.create;
+		return c;
+	}
 	public void EnterTitle() {
 		title.sendKeys("My First Deal.");
 	}
