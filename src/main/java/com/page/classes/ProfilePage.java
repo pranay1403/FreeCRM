@@ -18,6 +18,15 @@ public class ProfilePage {
 
 	@FindBy(xpath = "//a [@href='/deals']")
 	WebElement deal;
+	
+	@FindBy(xpath = "//a[@href='/cases']")
+	WebElement cases;
+	
+	@FindBy(xpath = "//i[@class='edit icon']//parent::button[@class='ui linkedin button']")
+	WebElement createcomp;
+	
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[1]/div[1]/div/div/div/input")
+	WebElement name;
 
 	public ProfilePage(WebDriver driver) {
 
@@ -42,6 +51,10 @@ public class ProfilePage {
 		boolean s = deal.isDisplayed();
 		return s;
 	}
+	public boolean VisibilityofCases() {
+		boolean s = cases.isDisplayed();
+		return s;
+	}
 
 	public boolean clickabilityofCalender() {
 		boolean s = calender.isEnabled();
@@ -61,6 +74,10 @@ public class ProfilePage {
 		boolean s = deal.isEnabled();
 		return s;
 	}
+	public boolean clickabilityofCase() {
+		boolean s = cases.isEnabled();
+		return s;
+	}
 
 	public void clickoncalender() {
 		calender.click();
@@ -76,5 +93,21 @@ public class ProfilePage {
 	
 	public void clickonDeal() {
 		deal.click();
+	}
+	public void clickonCase() {
+		cases.click();
+	}
+	public void clickonCreateComp() {
+		createcomp.click();
+	}
+	public void clickonName() {
+		name.click();
+	}
+	public void Entername() {
+		name.sendKeys("Wagholi pvt.");
+	}
+	public WebElement name() {
+		WebElement n=name;
+		return n;
 	}
 }
