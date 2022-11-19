@@ -5,15 +5,9 @@
     <classes>
       <class name="com.test.cases.TestCase10">
         <methods>
-          <include name="validateStatus"/>
           <include name="browserTearUp"/>
-          <include name="validateCreatebtn"/>
-          <include name="validateType"/>
-          <include name="validateSource"/>
-          <include name="validateAssignTo"/>
           <include name="BrowserStart"/>
-          <include name="validateTags"/>
-          <include name="validateStage"/>
+          <include name="validateAssignTo"/>
         </methods>
       </class> <!-- com.test.cases.TestCase10 -->
     </classes>

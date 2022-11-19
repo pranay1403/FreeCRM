@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreateNewDealPage {
-    @FindBy(xpath = "//button [@class='ui linkedin button']//child::i[@class='edit icon']")
-    private WebElement create;
-    
+	@FindBy(xpath = "//button [@class='ui linkedin button']//child::i[@class='edit icon']")
+	private WebElement create;
+
 	@FindBy(xpath = "//input[@name='title']")
 	private WebElement title;
 
-	@FindBy(xpath = "//div[@class='ui active visible fluid multiple selection dropdown']")
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[2]/div[1]/div/div")
 	private WebElement assign;
 
 	@FindBy(xpath = "//div[@name='company']//child::input")
@@ -24,7 +24,7 @@ public class CreateNewDealPage {
 	@FindBy(xpath = "//div[@name='contacts']//child::input")
 	private WebElement contact;
 
-	@FindBy(xpath = "//div[@class='ui active visible fluid multiple search selection dropdown']")
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[4]/div[2]/div/label[2]/div/input")
 	private WebElement tag;
 
 	@FindBy(xpath = "//input[@name='probability']")
@@ -57,15 +57,34 @@ public class CreateNewDealPage {
 	@FindBy(xpath = "//input [@name='identifier']")
 	private WebElement identifier;
 
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[2]/div[1]/div/div/div[2]/div")
+	private WebElement selectAssignto;
+
+	@FindBy(xpath = "//span[text()='Quote']//parent::div")
+	private WebElement selectstage;
+
+	@FindBy(xpath = "//span[text()='On Hold']//parent::div")
+	private WebElement selectstatus;
+
+	@FindBy(xpath = "//span[text()='Opportunity']//parent::div")
+	private WebElement selecttype;
+
+	@FindBy(xpath = "//span[text()='Referral']//parent::div")
+	private WebElement selectsource;
+
+	@FindBy(xpath = "//i[@class='save icon']//parent::button")
+	private WebElement save;
+
 	public CreateNewDealPage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
 	}
-    
+
 	public boolean visiabilityofCreate() {
-		boolean b=create.isDisplayed();
+		boolean b = create.isDisplayed();
 		return b;
 	}
+
 	public boolean visiabilityofTitle() {
 		boolean b = title.isDisplayed();
 		return b;
@@ -146,6 +165,11 @@ public class CreateNewDealPage {
 		return b;
 	}
 	
+	public boolean visiabilityofSave() {
+		boolean b=save.isDisplayed();
+		return b;
+	}
+
 	public boolean clickabilityofCreate() {
 		boolean b = create.isEnabled();
 		return b;
@@ -230,7 +254,13 @@ public class CreateNewDealPage {
 		boolean b = identifier.isEnabled();
 		return b;
 	}
-	
+
+	public boolean clickabilityofSave() {
+		boolean b = save.isEnabled();
+		return b;
+
+	}
+
 	public void clickonCreate() {
 		create.click();
 	}
@@ -298,77 +328,122 @@ public class CreateNewDealPage {
 	public void clickonIdentifier() {
 		identifier.click();
 	}
+
+	public void clickonSelectAssignTo() {
+		selectAssignto.click();
+	}
+
+	public void clickonSelectType() {
+		selecttype.click();
+	}
+
+	public void clickonSelectStage() {
+		selectstage.click();
+	}
+
+	public void clickonSelectStatus() {
+		selectstatus.click();
+	}
+
+	public void clickonSelectSource() {
+		selectsource.click();
+	}
+
+	public void clickonSave() {
+		save.click();
+	}
+
 	public WebElement AssignTo() {
-		WebElement b=assign;
+		WebElement b = assign;
 		return b;
 	}
+
 	public WebElement Stage() {
-		WebElement b=stage;
+		WebElement b = stage;
 		return b;
 	}
+
 	public WebElement Status() {
-		WebElement b=status;
+		WebElement b = status;
 		return b;
 	}
+
 	public WebElement Type() {
-		WebElement b=type;
+		WebElement b = type;
 		return b;
 	}
+
 	public WebElement Source() {
-		WebElement b=source;
+		WebElement b = source;
 		return b;
 	}
+
 	public WebElement Company() {
-		WebElement b=company;
+		WebElement b = company;
 		return b;
 	}
+
 	public WebElement Contacts() {
-		WebElement b=contact;
+		WebElement b = contact;
 		return b;
 	}
+
 	public WebElement Products() {
-		WebElement b=product;
+		WebElement b = product;
 		return b;
 	}
+
 	public WebElement Tags() {
-		WebElement b=tag;
+		WebElement b = tag;
 		return b;
 	}
+
 	public WebElement Create() {
-		WebElement c=this.create;
+		WebElement c = this.create;
 		return c;
 	}
+
 	public void EnterTitle() {
 		title.sendKeys("My First Deal.");
 	}
+
 	public void EnterCompany() {
 		company.sendKeys("ByteSquareTech,Kharadi");
 	}
+
 	public void EnterProducts() {
 		product.sendKeys("Service base");
 	}
+
 	public void EnterContacts() {
 		contact.sendKeys("MH124534");
 	}
+
 	public void EnterTags() {
 		tag.sendKeys("AQWE1541");
 	}
+
 	public void EnterDescription() {
 		description.sendKeys("To deal about new technology develope in the market");
 	}
+
 	public void EnterProbability() {
-		probability.sendKeys("96.3");
+		probability.sendKeys("75");
 	}
+
 	public void EnterNextStep() {
 		nextstep.sendKeys("To final meeting arrange in next week");
 	}
+
 	public void EnterIdentifier() {
 		identifier.sendKeys("Red Shirt and Blue Pant.");
 	}
+
 	public void EnterAmount() {
 		amount.sendKeys("100000");
-		
+
 	}
+
 	public void EnterCommission() {
 		commision.sendKeys("5000");
 	}

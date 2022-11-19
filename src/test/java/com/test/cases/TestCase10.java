@@ -1,10 +1,5 @@
 package com.test.cases;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -29,20 +24,19 @@ public class TestCase10 extends BaseClass {
 		lp.Entercredentials();
 		lp.clickOnloginbtn();
 		pp=new ProfilePage(driver);
-		pp.clickabilityofDeal();
-		
+		pp.clickonDeal();
 	}
-	@Test(priority = 2)
+	@Test(priority = 2,dependsOnMethods = "initialSetup")
 	public void validateCreatebtn() {
 		dp=new CreateNewDealPage(driver);
-		WebDriverWait w=new WebDriverWait(driver, Duration.ofSeconds(20));
-		w.until(ExpectedConditions.presenceOfElementLocated((By) dp.Create()));
+//		WebDriverWait w=new WebDriverWait(driver, Duration.ofSeconds(20));
+//		w.until(ExpectedConditions.presenceOfElementLocated((By) dp.Create()));
 		Assert.assertTrue(dp.visiabilityofCreate());
 		Assert.assertTrue(dp.clickabilityofCreate());
 		dp.clickonCreate();
 		
 	}
-	@Test(priority = 3)
+	@Test(priority = 3,dependsOnMethods = "validateCreatebtn")
 	public void validateTitle() {
 		dp=new CreateNewDealPage(driver);
 		Assert.assertTrue(dp.visiabilityofTitle());
@@ -51,12 +45,14 @@ public class TestCase10 extends BaseClass {
 		dp.EnterTitle();
 		
 	}
-	@Test(priority=4)
+	@Test(priority=4,dependsOnMethods = "validateCreatebtn")
 	public void validateAssignTo() {
 		dp=new CreateNewDealPage(driver);
-		Assert.assertTrue(dp.visiabilityofAssignto());
-		Assert.assertTrue(dp.clickabilityofAssignTo());
-	    selectDropindex(dp.AssignTo(), 0);
+//		Assert.assertTrue(dp.visiabilityofAssignto());
+//		Assert.assertTrue(dp.clickabilityofAssignTo());
+//	    selectDropindex(dp.AssignTo(), 0);
+		dp.clickonAssignTo();
+		dp.clickonSelectAssignTo();
 	    		
 	}
 	@Test(priority = 5)
@@ -134,16 +130,19 @@ public class TestCase10 extends BaseClass {
 		dp=new CreateNewDealPage(driver);
 		Assert.assertTrue(dp.visiabilityofStage());
 		Assert.assertTrue(dp.clickabilityofStage());
-		selectDropindex(dp.Stage(), 2);
-		
+//		selectDropindex(dp.Stage(), 2);
+		dp.clickonStage();
+		dp.clickonSelectStage();
 	}
+	
 	@Test(priority=14)
 	public void validateStatus() {
 		dp=new CreateNewDealPage(driver);
 		Assert.assertTrue(dp.visiabilityofStatus());
 		Assert.assertTrue(dp.clickabilityofStatus());
-		selectDropindex(dp.Status(), 1);
-		
+//		selectDropindex(dp.Status(), 1);
+		dp.clickonStatus();
+		dp.clickonSelectStatus();
 	}
 	@Test(priority=15)
 	public void validateNextStep() {
@@ -158,15 +157,18 @@ public class TestCase10 extends BaseClass {
 		dp=new CreateNewDealPage(driver);
 		Assert.assertTrue(dp.visiabilityofType());
 		Assert.assertTrue(dp.clickabilityofType());
-		selectDropindex(dp.Type(), 3);
+//		selectDropindex(dp.Type(), 3);
+		dp.clickonType();
+		dp.clickonSelectType();
 	}
 	@Test(priority=17)
 	public void validateSource() {
 		dp=new CreateNewDealPage(driver);
 		Assert.assertTrue(dp.visiabilityofSource());
 		Assert.assertTrue(dp.clickabilityofSource());
-		selectDropindex(dp.Source(), 1);
-		
+//		selectDropindex(dp.Source(), 1);
+		dp.clickonSource();
+		dp.clickonSelectSource();
 	}
 	@Test(priority=18)
 	public void validateIdentifier() {
@@ -175,6 +177,14 @@ public class TestCase10 extends BaseClass {
 		Assert.assertTrue(dp.clickabilityofIdentifier());
 		dp.clickonIdentifier();
 		dp.EnterIdentifier();
+	}
+	
+	@Test(priority=19)
+	public void validateSavebtn() {
+		dp=new CreateNewDealPage(driver);
+		Assert.assertTrue(dp.visiabilityofSave());
+		Assert.assertTrue(dp.clickabilityofSave());
+		dp.clickonSave();
 	}
 	
 }
