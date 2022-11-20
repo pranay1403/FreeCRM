@@ -32,6 +32,8 @@ public class TestCase12 extends BaseClass{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		pp.clickonCancalComp();
+		pp.clickonCreateComp();
 		pp.clickonName();
 		pp.Entername();
 		pressEnter(driver, pp.name());

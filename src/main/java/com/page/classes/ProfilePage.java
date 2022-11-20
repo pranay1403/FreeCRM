@@ -27,7 +27,10 @@ public class ProfilePage {
 	
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[1]/div[1]/div/div/div/input")
 	WebElement name;
-
+	
+	@FindBy(xpath = "//i[@class='cancel icon']/parent::button")
+	WebElement cancalcomp;
+	
 	public ProfilePage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
@@ -109,5 +112,8 @@ public class ProfilePage {
 	public WebElement name() {
 		WebElement n=name;
 		return n;
+	}
+	public void clickonCancalComp() {
+		cancalcomp.click();
 	}
 }
