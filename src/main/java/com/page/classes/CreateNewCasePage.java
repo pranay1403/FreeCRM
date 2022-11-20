@@ -1,5 +1,7 @@
 package com.page.classes;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,7 +31,16 @@ public class CreateNewCasePage {
 
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[4]/div[2]/div/div[1]/div/input")
 	private WebElement deadline;
-
+	
+	@FindBy(xpath = "//div[text()='November 2022']/parent::div")
+	WebElement actualMonthYear;
+	
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[4]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]/div")
+	List<WebElement> actualDate;
+	
+	@FindBy(xpath = "//button[text()='Next Month']")
+	WebElement nextmonth;
+	
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[5]/div[1]/div/div/div/input")
 	private WebElement closedate;
 
@@ -335,5 +346,40 @@ public class CreateNewCasePage {
 		WebElement e=tag;
 		return e;
 	}
+	public WebElement Deadline() {
+		WebElement e=deadline;
+		return e;
+	}
+	public String actualMonthYear() {
+		String acmy=actualMonthYear.getText();
+		return acmy;
+	}
+	public void clickonNextMonth() {
+		nextmonth.click();
+	}
+	
+	public void EnterDeadline() {
+		String expectedDate="17";
+		String expectedMonthYear="December 2022";
+		String actualmonthyear=actualMonthYear();
+		
+		while(true) {
+			if(actualmonthyear.contains(expectedMonthYear)) {
+				
+				for(WebElement s: actualDate) {
+					String actualdate=s.getText();
+					if(expectedDate.equals(actualdate)) {
+					s.click();
+					break;
+				}
+					
+			}
+				clickonNextMonth();
+				break;
+		}
+		
+		
+	}
 
+}
 }

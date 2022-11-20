@@ -7,9 +7,7 @@
         <methods>
           <include name="browserTearUp"/>
           <include name="BrowserStart"/>
-          <include name="validateCompany"/>
-          <include name="validateContact"/>
-          <include name="validateDeal"/>
+          <include name="initialSetup"/>
         </methods>
       </class> <!-- com.test.cases.TestCases11 -->
     </classes>

@@ -21,6 +21,12 @@ public class TestCases11 extends BaseClass {
 	public void initialSetup() {
 		hp = new HomePage(driver);
 		hp.clickonLogIn();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		lp = new LoginPage(driver);
 		lp.Entercredentials();
 		lp.clickOnloginbtn();
@@ -144,11 +150,19 @@ public class TestCases11 extends BaseClass {
 		ncp.clickonIdentifier();
 		ncp.EnterIdentifier();
 	}
-	@Test(priority=14)
+	@Test(priority=15)
 	public void validateSavebtn() {
 		ncp=new CreateNewCasePage(driver);
 		Assert.assertTrue(ncp.visiabilityofSave());
 		Assert.assertTrue(ncp.clickabilityofSave());
 		ncp.clickonSave();
+	}
+	
+	@Test(dependsOnMethods = "validateCreatebtn",priority = 14)
+	public void validateDeadline() {
+		ncp=new CreateNewCasePage(driver);
+		ncp.clickonDeadline();
+		ncp.EnterDeadline();
+		pressEnter(driver, ncp.Deadline());
 	}
 }
