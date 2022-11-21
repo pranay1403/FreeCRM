@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.cases.TestCase8">
+      <class name="com.test.cases.TestCases11">
         <methods>
-          <include name="entercred"/>
           <include name="browserTearUp"/>
-          <include name="clickonsave"/>
           <include name="BrowserStart"/>
-          <include name="Visibilityofcancel"/>
-          <include name="intialsetup"/>
+          <include name="initialSetup"/>
         </methods>
-      </class> <!-- com.test.cases.TestCase8 -->
+      </class> <!-- com.test.cases.TestCases11 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

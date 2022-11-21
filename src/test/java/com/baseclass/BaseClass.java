@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -24,6 +25,7 @@ import com.utility.ReadProp;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
+	Select sc;
 	public static WebDriver driver;
 	ReadProp prop = new ReadProp();
 	String browser = prop.browser();
@@ -86,6 +88,18 @@ public class BaseClass {
 	public void pressTabs(WebDriver driver, WebElement e) {
 		Actions ac = new Actions(driver);
 		ac.moveToElement(e).keyDown(Keys.TAB).build().perform();
+	}
+	public void selectDropindex(WebElement e,int i) {
+		sc=new Select(e);
+		sc.selectByIndex(i);
+	}
+	public void selectDropvisibletext( WebElement e, String s) {
+		sc=new Select(e);
+		sc.selectByVisibleText(s);
+	}
+	public void selectDropbyvalue( WebElement e,String s) {
+		sc=new Select(e);
+		sc.selectByValue(s);
 	}
 
 	public String getTitle() {
