@@ -150,7 +150,7 @@ public class TestCases11 extends BaseClass {
 		ncp.clickonIdentifier();
 		ncp.EnterIdentifier();
 	}
-	@Test(priority=15)
+	@Test(priority=16)
 	public void validateSavebtn() {
 		ncp=new CreateNewCasePage(driver);
 		Assert.assertTrue(ncp.visiabilityofSave());
@@ -158,11 +158,22 @@ public class TestCases11 extends BaseClass {
 		ncp.clickonSave();
 	}
 	
-	@Test(dependsOnMethods = "validateCreatebtn",priority = 14)
+	@Test(dependsOnMethods = "validateCreatebtn",priority = 15)
 	public void validateDeadline() {
 		ncp=new CreateNewCasePage(driver);
 		ncp.clickonDeadline();
-		ncp.EnterDeadline();
+		ncp.EnterDeadLine();
 		pressEnter(driver, ncp.Deadline());
+	}
+	
+	@Test(priority=14)
+	public void validateClosedate() {
+		ncp=new CreateNewCasePage(driver);
+		ncp.clickonClosedate();
+		ncp.EnterClosedate();
+		pressEnter(driver, ncp.Closedate());
+		
+		
+		
 	}
 }

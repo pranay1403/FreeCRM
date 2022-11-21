@@ -31,16 +31,16 @@ public class CreateNewCasePage {
 
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[4]/div[2]/div/div[1]/div/input")
 	private WebElement deadline;
-	
+
 	@FindBy(xpath = "//div[text()='November 2022']/parent::div")
 	WebElement actualMonthYear;
-	
+
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[4]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]/div")
 	List<WebElement> actualDate;
-	
+
 	@FindBy(xpath = "//button[text()='Next Month']")
 	WebElement nextmonth;
-	
+
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[5]/div[1]/div/div/div/input")
 	private WebElement closedate;
 
@@ -70,15 +70,15 @@ public class CreateNewCasePage {
 
 	@FindBy(xpath = "//i[@class='save icon']//parent::button")
 	private WebElement save;
-	
+
 	@FindBy(xpath = "//i[@class='edit icon']//parent::button")
 	private WebElement create;
-	
+
 	public CreateNewCasePage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public boolean visiabilityofCreate() {
 		boolean b = create.isDisplayed();
 		return b;
@@ -148,11 +148,12 @@ public class CreateNewCasePage {
 		boolean b = identifier.isDisplayed();
 		return b;
 	}
+
 	public boolean visiabilityofSave() {
 		boolean b = save.isDisplayed();
 		return b;
 	}
-	
+
 	public boolean clickabilityofCreate() {
 		boolean b = create.isEnabled();
 		return b;
@@ -222,11 +223,12 @@ public class CreateNewCasePage {
 		boolean b = identifier.isEnabled();
 		return b;
 	}
+
 	public boolean clickabilityofSave() {
 		boolean b = save.isEnabled();
 		return b;
 	}
-	
+
 	public void clickonCreate() {
 		create.click();
 	}
@@ -282,6 +284,7 @@ public class CreateNewCasePage {
 	public void clickonIdentifier() {
 		identifier.click();
 	}
+
 	public void clickonSave() {
 		save.click();
 	}
@@ -315,7 +318,7 @@ public class CreateNewCasePage {
 	}
 
 	public void EnterDeal() {
-        deal.sendKeys("is the best deal");
+		deal.sendKeys("is the best deal");
 	}
 
 	public void EnterTags() {
@@ -331,55 +334,73 @@ public class CreateNewCasePage {
 	}
 
 	public WebElement Contact() {
-		WebElement e=contact;
+		WebElement e = contact;
 		return e;
 	}
+
 	public WebElement Company() {
-		WebElement e=company;
+		WebElement e = company;
 		return e;
 	}
+
 	public WebElement Deal() {
-		WebElement e=deal;
+		WebElement e = deal;
 		return e;
 	}
+
 	public WebElement Tags() {
-		WebElement e=tag;
+		WebElement e = tag;
 		return e;
 	}
+
 	public WebElement Deadline() {
-		WebElement e=deadline;
+		WebElement e = deadline;
+		return e;
+	}
+	
+	public WebElement Closedate() {
+		WebElement e = closedate;
 		return e;
 	}
 	public String actualMonthYear() {
-		String acmy=actualMonthYear.getText();
+		String acmy = actualMonthYear.getText();
 		return acmy;
 	}
+
 	public void clickonNextMonth() {
 		nextmonth.click();
 	}
-	
+
 	public void EnterDeadline() {
-		String expectedDate="17";
-		String expectedMonthYear="December 2022";
-		String actualmonthyear=actualMonthYear();
-		
-		while(true) {
-			if(actualmonthyear.contains(expectedMonthYear)) {
-				
-				for(WebElement s: actualDate) {
-					String actualdate=s.getText();
-					if(expectedDate.equals(actualdate)) {
-					s.click();
+		String expectedDate = "17";
+		String expectedMonthYear = "December 2022";
+		String actualmonthyear = actualMonthYear();
+
+		while (true) {
+			if (actualmonthyear.contains(expectedMonthYear)) {
+
+				for (WebElement s : actualDate) {
+					String actualdate = s.getText();
+					if (expectedDate.equals(actualdate)) {
+						s.click();
+						break;
+					}
+					clickonNextMonth();
 					break;
 				}
-					
-			}
-				clickonNextMonth();
-				break;
-		}
-		
-		
-	}
 
+			}
+
+		}
+
+	}
+	public void EnterDeadLine() {
+		deadline.sendKeys("31/12/2022 16:45");
+	}
+	
+	public void EnterClosedate() {
+		closedate.sendKeys("27/12/2022 18:00");
+	}
 }
-}
+
+

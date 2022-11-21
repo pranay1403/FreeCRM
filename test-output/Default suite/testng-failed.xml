@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.cases.TestCases11">
+      <class name="com.test.cases.TestCase7">
         <methods>
+          <include name="validateDaybtn"/>
           <include name="browserTearUp"/>
           <include name="BrowserStart"/>
+          <include name="validateMonthbtn"/>
+          <include name="validateWeekbtn"/>
+          <include name="validateAgendabtn"/>
+          <include name="enterRandondate"/>
           <include name="initialSetup"/>
         </methods>
-      </class> <!-- com.test.cases.TestCases11 -->
+      </class> <!-- com.test.cases.TestCase7 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
