@@ -2,7 +2,39 @@
 <testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-11-21T16:25:42 IST" name="Default suite" finished-at="2022-11-21T16:26:16 IST" duration-ms="34273">
+=======
+<<<<<<< HEAD
+  <suite started-at="2022-11-19T16:16:56 IST" name="Default suite" finished-at="2022-11-19T16:17:51 IST" duration-ms="55155">
+    <groups>
+    </groups>
+    <test started-at="2022-11-19T16:16:56 IST" name="Default test" finished-at="2022-11-19T16:17:51 IST" duration-ms="55155">
+      <class name="com.test.cases.TestCase8">
+        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-19T16:16:57 IST" name="BrowserStart" finished-at="2022-11-19T16:17:13 IST" duration-ms="15728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserStart -->
+        <test-method signature="intialsetup()[pri:1, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-19T16:17:13 IST" name="intialsetup" finished-at="2022-11-19T16:17:20 IST" duration-ms="7592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialsetup -->
+        <test-method signature="Visibilityofcancel()[pri:2, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-19T16:17:20 IST" name="Visibilityofcancel" finished-at="2022-11-19T16:17:22 IST" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Visibilityofcancel -->
+        <test-method signature="entercred()[pri:3, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-19T16:17:22 IST" name="entercred" finished-at="2022-11-19T16:17:45 IST" duration-ms="23327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entercred -->
+        <test-method signature="clickonsave()[pri:4, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-19T16:17:45 IST" name="clickonsave" finished-at="2022-11-19T16:17:45 IST" depends-on-methods="com.test.cases.TestCase8.entercred" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonsave -->
+        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase8@5149d738]" started-at="2022-11-19T16:17:45 IST" name="browserTearUp" finished-at="2022-11-19T16:17:51 IST" duration-ms="5926" status="PASS">
+=======
+  <suite started-at="2022-11-20T14:36:40 IST" name="Default suite" finished-at="2022-11-20T14:37:36 IST" duration-ms="56147">
+>>>>>>> 11066dfc027416ba43173ba566bcd65a79838cd0
     <groups>
     </groups>
     <test started-at="2022-11-21T16:25:42 IST" name="Default test" finished-at="2022-11-21T16:26:16 IST" duration-ms="34273">
@@ -15,6 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
+<<<<<<< HEAD
         <test-method signature="validateCreatebtn()[pri:2, instance:com.test.cases.TestCases11@78691363]" started-at="2022-11-21T16:26:05 IST" name="validateCreatebtn" finished-at="2022-11-21T16:26:05 IST" depends-on-methods="com.test.cases.TestCases11.initialSetup" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -76,6 +109,10 @@
           </reporter-output>
         </test-method> <!-- validateSavebtn -->
         <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCases11@78691363]" started-at="2022-11-21T16:26:11 IST" name="browserTearUp" finished-at="2022-11-21T16:26:16 IST" duration-ms="5318" status="PASS">
+=======
+        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCases11@71d44a3]" started-at="2022-11-20T14:37:30 IST" name="browserTearUp" finished-at="2022-11-20T14:37:36 IST" duration-ms="5623" status="PASS">
+>>>>>>> 1c23bf3640015dc44c69fdeeb62f32b2cd1fef0b
+>>>>>>> 11066dfc027416ba43173ba566bcd65a79838cd0
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearUp -->
