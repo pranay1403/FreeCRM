@@ -10,7 +10,7 @@ public class ReadProp {
 	public ReadProp() {
 
 
-		String path = "E:\\eclipse-workspace4\\com.FreeCRM\\Configfile\\testdata.properties";
+		String path = System.getProperty("user.dir") + "\\Configfile\\testdata.properties";
 
 
 
