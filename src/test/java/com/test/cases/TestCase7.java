@@ -81,7 +81,7 @@ public class TestCase7 extends BaseClass {
 		backword();
 		
 	}
-	@Test(priority=9,description="validate calanderFuctionality",dependsOnMethods = "initialSetup")
+	@Test(priority=9,description="validate calanderFuctionality")
 	public void enterRandondate() {
 		bcp=new BigCalanderHome(driver);
 		bcp.selectrandomdate();
