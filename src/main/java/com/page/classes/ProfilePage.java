@@ -22,6 +22,9 @@ public class ProfilePage {
 	@FindBy(xpath = "//a[@href='/cases']")
 	WebElement cases;
 	
+	@FindBy(xpath = "\"//a [@href='/calls']\"")
+	WebElement call;
+	
 	@FindBy(xpath = "//i[@class='edit icon']//parent::button[@class='ui linkedin button']")
 	WebElement createcomp;
 	
@@ -58,6 +61,11 @@ public class ProfilePage {
 		boolean s = cases.isDisplayed();
 		return s;
 	}
+	
+	public boolean VisibilityofCall() {
+		boolean s = call.isDisplayed();
+		return s;
+	}
 
 	public boolean clickabilityofCalender() {
 		boolean s = calender.isEnabled();
@@ -81,6 +89,11 @@ public class ProfilePage {
 		boolean s = cases.isEnabled();
 		return s;
 	}
+	
+	public boolean clickabilityofCall() {
+		boolean s = call.isEnabled();
+		return s;
+	}
 
 	public void clickoncalender() {
 		calender.click();
@@ -99,6 +112,10 @@ public class ProfilePage {
 	}
 	public void clickonCase() {
 		cases.click();
+	}
+	
+	public void clickonCall() {
+		call.click();
 	}
 	public void clickonCreateComp() {
 		createcomp.click();
