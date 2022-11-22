@@ -9,6 +9,9 @@ public class CreateNewCallPage {
 
 	@FindBy(xpath = "//i[@class='edit icon']//parent::button")
 	WebElement create;
+	
+	@FindBy(xpath = "//i[@class='cancel icon']")
+	WebElement cancel;
 
 	@FindBy(xpath = "//label[text()='Call Time']/parent::div/div/div/input[@type='text']")
 	WebElement calltime;
@@ -78,180 +81,182 @@ public class CreateNewCallPage {
 		PageFactory.initElements(driver, this);
 	}
 
-
-
 	public boolean visiabilityofCreatebtn() {
-		boolean b=create.isDisplayed();
+		boolean b = create.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofCalltime() {
-		boolean b=calltime.isDisplayed();
+		boolean b = calltime.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofStarttime() {
-		boolean b=starttime.isDisplayed();
+		boolean b = starttime.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofAssignto() {
-		boolean b=assignto.isDisplayed();
+		boolean b = assignto.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofType() {
-		boolean b=type.isDisplayed();
+		boolean b = type.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofDuration() {
-		boolean b=duration.isDisplayed();
+		boolean b = duration.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofFlag() {
-		boolean b=flag.isDisplayed();
+		boolean b = flag.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofTags() {
-		boolean b=tag.isDisplayed();
+		boolean b = tag.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofDescription() {
-		boolean b=description.isDisplayed();
+		boolean b = description.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofContacts() {
-		boolean b=contact.isDisplayed();
+		boolean b = contact.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofDeal() {
-		boolean b=deal.isDisplayed();
+		boolean b = deal.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofTasks() {
-		boolean b=task.isDisplayed();
+		boolean b = task.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofCase() {
-		boolean b=cases.isDisplayed();
+		boolean b = cases.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofIdentifier() {
-		boolean b=identifier.isDisplayed();
+		boolean b = identifier.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofCountry() {
-		boolean b=hintcountry.isDisplayed();
+		boolean b = hintcountry.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofNumber() {
-		boolean b=number.isDisplayed();
+		boolean b = number.isDisplayed();
 		return b;
 	}
 
 	public boolean visiabilityofHome() {
-		boolean b=home.isDisplayed();
+		boolean b = home.isDisplayed();
 		return b;
 	}
 
 	public boolean clickabilityofCreate() {
-		boolean b=create.isEnabled();
+		boolean b = create.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofCalltime() {
-		boolean b=calltime.isEnabled();
+		boolean b = calltime.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofStarttime() {
-		boolean b=starttime.isEnabled();
+		boolean b = starttime.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofAssignto() {
-		boolean b=assignto.isEnabled();
+		boolean b = assignto.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofType() {
-		boolean b=type.isEnabled();
+		boolean b = type.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofDuration() {
-		boolean b=duration.isEnabled();
+		boolean b = duration.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofFlag() {
-		boolean b=flag.isEnabled();
+		boolean b = flag.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofTags() {
-		boolean b=tag.isEnabled();
+		boolean b = tag.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofDescription() {
-		boolean b=description.isEnabled();
+		boolean b = description.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofContacts() {
-		boolean b=contact.isEnabled();
+		boolean b = contact.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofDeal() {
-		boolean b=deal.isEnabled();
+		boolean b = deal.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofCase() {
-		boolean b=cases.isEnabled();
+		boolean b = cases.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofTasks() {
-		boolean b=task.isEnabled();
+		boolean b = task.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofCountry() {
-		boolean b=hintcountry.isEnabled();
+		boolean b = hintcountry.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofNumber() {
-		boolean b=number.isEnabled();
+		boolean b = number.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofHome() {
-		boolean b=home.isEnabled();
+		boolean b = home.isEnabled();
 		return b;
 	}
 
 	public boolean clickabilityofIdentifier() {
-		boolean b=identifier.isEnabled();
+		boolean b = identifier.isEnabled();
 		return b;
 	}
 
 	public void clickoncreate() {
 		create.click();
+	}
+	
+	public void clickonCancel() {
+		cancel.click();
 	}
 
 	public void clickonCalltime() {
@@ -279,7 +284,7 @@ public class CreateNewCallPage {
 	}
 
 	public void clickonDescription() {
-		description.click(); 
+		description.click();
 	}
 
 	public void clickonTags() {
@@ -334,61 +339,73 @@ public class CreateNewCallPage {
 		selectindia.click();
 	}
 
+	public WebElement Calltime() {
+		WebElement s = calltime;
+		return s;
+	}
+
+	public WebElement Starttime() {
+		WebElement s = starttime;
+		return s;
+	}
+
+	public WebElement Assignto() {
+		WebElement s = assignto;
+		return s;
+	}
+
+	public WebElement Tags() {
+		WebElement s = tag;
+		return s;
+	}
+
+	public WebElement Deal() {
+		WebElement s = deal;
+		return s;
+	}
+
+	public WebElement Task() {
+		WebElement s = task;
+		return s;
+	}
+
+	public WebElement Contact() {
+		WebElement s = contact;
+		return s;
+	}
+
+	public WebElement Identifier() {
+		WebElement s = identifier;
+		return s;
+	}
+
+	public WebElement Case() {
+		WebElement s = cases;
+		return s;
+	}
+
+	public WebElement description() {
+		WebElement s = description;
+		return s;
+	}
+
+	public WebElement Country() {
+		WebElement s = hintcountry;
+		return s;
+	}
 	
-
-public WebElement Calltime() {
-	WebElement s=calltime;
-	return s;
-}
-
-public WebElement Starttime() {
-	WebElement s=starttime;
-	return s;
-}
-
-public WebElement Assignto() {
-	WebElement s=assignto;
-	return s;
-}
-
-public WebElement Tags() {
-	WebElement s=tag;
-	return s;
-}
-
-public WebElement Deal() {
-	WebElement s=deal;
-	return s;
-}
-
-public WebElement Task() {
-	WebElement s=task;
-	return s;
-}
-
-public WebElement Contact() {
-	WebElement s=contact;
-	return s;
-}
-
-public WebElement Identifier() {
-	WebElement s=identifier;
-	return s;
-}
-
-public WebElement Case() {
-	WebElement s=cases;
-	return s;
-}
-
-public WebElement description() {
-	WebElement s=description;
-	return s;
-}
-
-public WebElement Country() {
-	WebElement s=hintcountry;
-	return s;
-}
+	public void EnterCallTime() {
+		calltime.sendKeys("30/11/2022 16:45");
+	}
+	
+	public void EnterStarttime() {
+		starttime.sendKeys("29/11/2022 18:30");
+	}
+	
+	public void EnterDuration() {
+		duration.sendKeys("10.00 min");
+	}
+	
+	
 
 }

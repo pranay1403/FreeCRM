@@ -22,7 +22,7 @@ public class ProfilePage {
 	@FindBy(xpath = "//a[@href='/cases']")
 	WebElement cases;
 	
-	@FindBy(xpath = "\"//a [@href='/calls']\"")
+	@FindBy(xpath = "//a [@href='/calls']")
 	WebElement call;
 	
 	@FindBy(xpath = "//i[@class='edit icon']//parent::button[@class='ui linkedin button']")
