@@ -46,6 +46,7 @@ public class TestCase13 extends BaseClass {
 		Assert.assertTrue(ncp.visiabilityofCalltime());
 		ncp.clickonCalltime();
 		ncp.EnterCallTime();
+		pressEnter(driver, ncp.Calltime());
 
 	}
 
@@ -56,6 +57,7 @@ public class TestCase13 extends BaseClass {
 		Assert.assertTrue(ncp.visiabilityofStarttime());
 		ncp.clickonStarttime();
 		ncp.EnterStarttime();
+		pressEnter(driver, ncp.Starttime());
 	}
 
 	@Test(priority = 5)
@@ -95,5 +97,64 @@ public class TestCase13 extends BaseClass {
 		ncp.clickonType();
 		ncp.SelectType();
 	}
+	
+	@Test(priority=9)
+	public void validateTag() {
+		ncp=new CreateNewCallPage(driver);
+		Assert.assertTrue(ncp.clickabilityofTags());
+		Assert.assertTrue(ncp.visiabilityofTags());
+		ncp.clickonTags();
+		ncp.EnterTag();
+		pressEnter(driver, ncp.Tags());
 
+	}
+	
+	@Test(priority=10)
+	public void validateDescription() {
+		ncp=new CreateNewCallPage(driver);
+		Assert.assertTrue(ncp.clickabilityofDescription());
+		Assert.assertTrue(ncp.visiabilityofDescription());
+		ncp.clickonDescription();
+		ncp.EnterDescription();
+		
+	}
+	
+	@Test(priority=11)
+	public void validateContacts() {
+		ncp=new CreateNewCallPage(driver);
+		Assert.assertTrue(ncp.clickabilityofContacts());
+		Assert.assertTrue(ncp.visiabilityofContacts());
+		ncp.clickonContacts();
+		ncp.EnterContacts();
+		pressEnter(driver, ncp.Contact());
+	}
+	
+	@Test(priority=12)
+	public void validateDeal() {
+		ncp=new CreateNewCallPage(driver);
+		Assert.assertTrue(ncp.clickabilityofDeal());
+		Assert.assertTrue(ncp.visiabilityofDeal());
+		ncp.clickonDeal();
+		ncp.EnterDeal();
+		pressEnter(driver, ncp.Deal());
+		
+	}
+	
+	@Test(priority=13)
+	public void validateCase() {
+		ncp=new CreateNewCallPage(driver);
+		Assert.assertTrue(ncp.clickabilityofCase());
+		Assert.assertTrue(ncp.visiabilityofCase());
+		ncp.clickonCase();
+		ncp.EnterCase();
+		pressEnter(driver, ncp.Case());
+	}
+		
+		
+		
+		
+		
+		
+		
+		
 }

@@ -9,7 +9,7 @@ public class CreateNewCallPage {
 
 	@FindBy(xpath = "//i[@class='edit icon']//parent::button")
 	WebElement create;
-	
+
 	@FindBy(xpath = "//i[@class='cancel icon']")
 	WebElement cancel;
 
@@ -254,7 +254,7 @@ public class CreateNewCallPage {
 	public void clickoncreate() {
 		create.click();
 	}
-	
+
 	public void clickonCancel() {
 		cancel.click();
 	}
@@ -393,19 +393,39 @@ public class CreateNewCallPage {
 		WebElement s = hintcountry;
 		return s;
 	}
-	
+
 	public void EnterCallTime() {
 		calltime.sendKeys("30/11/2022 16:45");
 	}
-	
+
 	public void EnterStarttime() {
 		starttime.sendKeys("29/11/2022 18:30");
 	}
-	
+
 	public void EnterDuration() {
 		duration.sendKeys("10.00 min");
 	}
-	
-	
+
+	public void EnterTag() {
+
+		tag.sendKeys("MHDGEB123HH");
+	}
+
+	public void EnterDescription() {
+		description.sendKeys("This is very important And urgent call. please recieve it.");
+	}
+
+	public void EnterContacts() {
+		contact.sendKeys("MH12EJ5950");
+
+	}
+
+	public void EnterDeal() {
+		deal.sendKeys("This is First deal");
+	}
+
+	public void EnterCase() {
+		cases.sendKeys("12545");
+	}
 
 }

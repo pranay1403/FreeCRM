@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-22T16:36:24 IST" name="Default suite" finished-at="2022-11-22T16:36:48 IST" duration-ms="24245">
+  <suite started-at="2022-11-22T19:11:35 IST" name="Default suite" finished-at="2022-11-22T19:12:00 IST" duration-ms="25007">
     <groups>
     </groups>
-    <test started-at="2022-11-22T16:36:24 IST" name="Default test" finished-at="2022-11-22T16:36:48 IST" duration-ms="24245">
+    <test started-at="2022-11-22T19:11:35 IST" name="Default test" finished-at="2022-11-22T19:12:00 IST" duration-ms="25007">
       <class name="com.test.cases.TestCase13">
-        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase13@7fd50002]" started-at="2022-11-22T16:36:24 IST" name="BrowserStart" finished-at="2022-11-22T16:36:34 IST" duration-ms="9733" status="PASS">
+        <test-method is-config="true" signature="BrowserStart()[pri:0, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:35 IST" name="BrowserStart" finished-at="2022-11-22T19:11:44 IST" duration-ms="8476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserStart -->
-        <test-method signature="initialSetup()[pri:1, instance:com.test.cases.TestCase13@7fd50002]" started-at="2022-11-22T16:36:34 IST" name="initialSetup" finished-at="2022-11-22T16:36:41 IST" duration-ms="7238" status="PASS">
+        <test-method signature="initialSetup()[pri:1, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:44 IST" name="initialSetup" finished-at="2022-11-22T19:11:51 IST" duration-ms="7085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="validateCreatebtn()[pri:2, instance:com.test.cases.TestCase13@7fd50002]" started-at="2022-11-22T16:36:42 IST" name="validateCreatebtn" finished-at="2022-11-22T16:36:42 IST" depends-on-methods="com.test.cases.TestCase13.initialSetup" duration-ms="466" status="PASS">
+        <test-method signature="validateCreatebtn()[pri:2, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:51 IST" name="validateCreatebtn" finished-at="2022-11-22T19:11:52 IST" depends-on-methods="com.test.cases.TestCase13.initialSetup" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreatebtn -->
-        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase13@7fd50002]" started-at="2022-11-22T16:36:42 IST" name="browserTearUp" finished-at="2022-11-22T16:36:48 IST" duration-ms="6262" status="PASS">
+        <test-method signature="validateCallTime()[pri:3, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:52 IST" name="validateCallTime" finished-at="2022-11-22T19:11:53 IST" duration-ms="1246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCallTime -->
+        <test-method signature="validateStarttime()[pri:4, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:53 IST" name="validateStarttime" finished-at="2022-11-22T19:11:54 IST" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStarttime -->
+        <test-method signature="validateAssignTo()[pri:5, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:54 IST" name="validateAssignTo" finished-at="2022-11-22T19:11:54 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAssignTo -->
+        <test-method signature="validateDuration()[pri:6, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:54 IST" name="validateDuration" finished-at="2022-11-22T19:11:54 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDuration -->
+        <test-method signature="validateFlag()[pri:7, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:54 IST" name="validateFlag" finished-at="2022-11-22T19:11:54 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFlag -->
+        <test-method signature="validateType()[pri:8, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:54 IST" name="validateType" finished-at="2022-11-22T19:11:55 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateType -->
+        <test-method is-config="true" signature="browserTearUp()[pri:0, instance:com.test.cases.TestCase13@61c4eee0]" started-at="2022-11-22T19:11:55 IST" name="browserTearUp" finished-at="2022-11-22T19:12:00 IST" duration-ms="5469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearUp -->

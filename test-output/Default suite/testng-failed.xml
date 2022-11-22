@@ -5,11 +5,9 @@
     <classes>
       <class name="com.test.cases.TestCase13">
         <methods>
-          <include name="validateCreatebtn"/>
-          <include name="validateCallTime"/>
+          <include name="validateStarttime"/>
           <include name="browserTearUp"/>
           <include name="BrowserStart"/>
-          <include name="initialSetup"/>
         </methods>
       </class> <!-- com.test.cases.TestCase13 -->
     </classes>
