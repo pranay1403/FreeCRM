@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,8 +32,8 @@ public class TestCase3 extends BaseClass {
 	public void ValidateCalender() {
 
 		pp = new ProfilePage(driver);
-		Assert.assertTrue(pp.VisibilityofCalender());
-		Assert.assertTrue(pp.clickabilityofCalender());
+		AssertJUnit.assertTrue(pp.VisibilityofCalender());
+		AssertJUnit.assertTrue(pp.clickabilityofCalender());
 		pp.clickoncalender();
 		backword();
 	}
@@ -39,8 +41,8 @@ public class TestCase3 extends BaseClass {
 	@Test(priority = 3)
 	public void ValidateContact() {
 		pp = new ProfilePage(driver);
-		Assert.assertTrue(pp.VisibilityofContact());
-		Assert.assertTrue(pp.clickabilityofContact());
+		AssertJUnit.assertTrue(pp.VisibilityofContact());
+		AssertJUnit.assertTrue(pp.clickabilityofContact());
 		pp.clickoncontact();
 		backword();
 	}
@@ -48,8 +50,8 @@ public class TestCase3 extends BaseClass {
 	@Test(priority = 4)
 	public void ValidateCompany() {
 		pp = new ProfilePage(driver);
-		Assert.assertTrue(pp.VisibilityofCompanies());
-		Assert.assertTrue(pp.clickabilityofCompanies());
+		AssertJUnit.assertTrue(pp.VisibilityofCompanies());
+		AssertJUnit.assertTrue(pp.clickabilityofCompanies());
 		pp.clickoncompany();
 		backword();
 	}

@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -35,26 +37,26 @@ public class TestCase6 extends BaseClass {
 	public void Validation() {
 		mp = new CompaniesPage(driver);
 
-		Assert.assertTrue(mp.VisibillityofView());
-		Assert.assertTrue(mp.ClickabillityofView());
+		AssertJUnit.assertTrue(mp.VisibillityofView());
+		AssertJUnit.assertTrue(mp.ClickabillityofView());
 
-		Assert.assertTrue(mp.ClickabillityofShowFilter());
-		Assert.assertTrue(mp.VisibillityofShowFilter());
+		AssertJUnit.assertTrue(mp.ClickabillityofShowFilter());
+		AssertJUnit.assertTrue(mp.VisibillityofShowFilter());
 
-		Assert.assertTrue(mp.ClickabillityofNumberActive());
-		Assert.assertTrue(mp.VisibillityofNumberActive());
+		AssertJUnit.assertTrue(mp.ClickabillityofNumberActive());
+		AssertJUnit.assertTrue(mp.VisibillityofNumberActive());
 
-		Assert.assertTrue(mp.ClickabillityofName());
-		Assert.assertTrue(mp.VisibillityofName());
+		AssertJUnit.assertTrue(mp.ClickabillityofName());
+		AssertJUnit.assertTrue(mp.VisibillityofName());
 
-		Assert.assertTrue(mp.ClickabillityofExport());
-		Assert.assertTrue(mp.VisibillityofExport());
+		AssertJUnit.assertTrue(mp.ClickabillityofExport());
+		AssertJUnit.assertTrue(mp.VisibillityofExport());
 
-		Assert.assertTrue(mp.ClickabillityofCreate());
-		Assert.assertTrue(mp.VisibillityofCreate());
+		AssertJUnit.assertTrue(mp.ClickabillityofCreate());
+		AssertJUnit.assertTrue(mp.VisibillityofCreate());
 
-		Assert.assertTrue(mp.ClickabillityofAddress());
-		Assert.assertTrue(mp.VisibillityofAddress());
+		AssertJUnit.assertTrue(mp.ClickabillityofAddress());
+		AssertJUnit.assertTrue(mp.VisibillityofAddress());
 
 	}
 

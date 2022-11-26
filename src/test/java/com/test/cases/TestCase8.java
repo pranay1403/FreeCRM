@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -37,9 +39,9 @@ public class TestCase8 extends BaseClass {
 	@Test(priority=2)
 	public void Visibilityofcancel() {
 		cm = new ContactCreate(driver);
-		Assert.assertTrue(cm.VisibilityofCancel());
-		Assert.assertTrue(cm.Clickabilityofcancel());
-		Assert.assertTrue(cm.Visibilityofsave());
+		AssertJUnit.assertTrue(cm.VisibilityofCancel());
+		AssertJUnit.assertTrue(cm.Clickabilityofcancel());
+		AssertJUnit.assertTrue(cm.Visibilityofsave());
 	}
 	
 	@Test(priority=3)

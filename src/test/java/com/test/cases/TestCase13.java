@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -32,8 +34,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority = 2, dependsOnMethods = "initialSetup")
 	public void validateCreatebtn() {
 		ncp = new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.visiabilityofCreatebtn());
-		Assert.assertTrue(ncp.clickabilityofCreate());
+		AssertJUnit.assertTrue(ncp.visiabilityofCreatebtn());
+		AssertJUnit.assertTrue(ncp.clickabilityofCreate());
 		ncp.clickoncreate();
 		ncp.clickonCancel();
 		ncp.clickoncreate();
@@ -42,8 +44,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority = 3)
 	public void validateCallTime() {
 		ncp = new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofCalltime());
-		Assert.assertTrue(ncp.visiabilityofCalltime());
+		AssertJUnit.assertTrue(ncp.clickabilityofCalltime());
+		AssertJUnit.assertTrue(ncp.visiabilityofCalltime());
 		ncp.clickonCalltime();
 		ncp.EnterCallTime();
 		pressEnter(driver, ncp.Calltime());
@@ -53,8 +55,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority = 4)
 	public void validateStarttime() {
 		ncp = new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofStarttime());
-		Assert.assertTrue(ncp.visiabilityofStarttime());
+		AssertJUnit.assertTrue(ncp.clickabilityofStarttime());
+		AssertJUnit.assertTrue(ncp.visiabilityofStarttime());
 		ncp.clickonStarttime();
 		ncp.EnterStarttime();
 		pressEnter(driver, ncp.Starttime());
@@ -63,8 +65,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority = 5)
 	public void validateAssignTo() {
 		ncp = new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.visiabilityofAssignto());
-		Assert.assertTrue(ncp.clickabilityofAssignto());
+		AssertJUnit.assertTrue(ncp.visiabilityofAssignto());
+		AssertJUnit.assertTrue(ncp.clickabilityofAssignto());
 //	    selectDropindex(dp.AssignTo(), 0);
 		ncp.clickonAssignto();
 		ncp.SelectAssignto();
@@ -74,8 +76,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=6)
 	public void validateDuration() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofDuration());
-		Assert.assertTrue(ncp.visiabilityofDuration());
+		AssertJUnit.assertTrue(ncp.clickabilityofDuration());
+		AssertJUnit.assertTrue(ncp.visiabilityofDuration());
 		ncp.clickonDuration();
 		ncp.EnterDuration();
 	}
@@ -83,8 +85,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=7)
 	public void validateFlag() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofFlag());
-		Assert.assertTrue(ncp.visiabilityofFlag());
+		AssertJUnit.assertTrue(ncp.clickabilityofFlag());
+		AssertJUnit.assertTrue(ncp.visiabilityofFlag());
 		ncp.clickonFlag();
 		ncp.SelectFlag();
 	}
@@ -92,8 +94,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=8)
 	public void validateType() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofType());
-		Assert.assertTrue(ncp.visiabilityofType());
+		AssertJUnit.assertTrue(ncp.clickabilityofType());
+		AssertJUnit.assertTrue(ncp.visiabilityofType());
 		ncp.clickonType();
 		ncp.SelectType();
 	}
@@ -101,8 +103,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=9)
 	public void validateTag() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofTags());
-		Assert.assertTrue(ncp.visiabilityofTags());
+		AssertJUnit.assertTrue(ncp.clickabilityofTags());
+		AssertJUnit.assertTrue(ncp.visiabilityofTags());
 		ncp.clickonTags();
 		ncp.EnterTag();
 		pressEnter(driver, ncp.Tags());
@@ -112,8 +114,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=10)
 	public void validateDescription() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofDescription());
-		Assert.assertTrue(ncp.visiabilityofDescription());
+		AssertJUnit.assertTrue(ncp.clickabilityofDescription());
+		AssertJUnit.assertTrue(ncp.visiabilityofDescription());
 		ncp.clickonDescription();
 		ncp.EnterDescription();
 		
@@ -122,8 +124,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=11)
 	public void validateContacts() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofContacts());
-		Assert.assertTrue(ncp.visiabilityofContacts());
+		AssertJUnit.assertTrue(ncp.clickabilityofContacts());
+		AssertJUnit.assertTrue(ncp.visiabilityofContacts());
 		ncp.clickonContacts();
 		ncp.EnterContacts();
 		pressEnter(driver, ncp.Contact());
@@ -132,8 +134,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=12)
 	public void validateDeal() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofDeal());
-		Assert.assertTrue(ncp.visiabilityofDeal());
+		AssertJUnit.assertTrue(ncp.clickabilityofDeal());
+		AssertJUnit.assertTrue(ncp.visiabilityofDeal());
 		ncp.clickonDeal();
 		ncp.EnterDeal();
 		pressEnter(driver, ncp.Deal());
@@ -143,8 +145,8 @@ public class TestCase13 extends BaseClass {
 	@Test(priority=13)
 	public void validateCase() {
 		ncp=new CreateNewCallPage(driver);
-		Assert.assertTrue(ncp.clickabilityofCase());
-		Assert.assertTrue(ncp.visiabilityofCase());
+		AssertJUnit.assertTrue(ncp.clickabilityofCase());
+		AssertJUnit.assertTrue(ncp.visiabilityofCase());
 		ncp.clickonCase();
 		ncp.EnterCase();
 		pressEnter(driver, ncp.Case());

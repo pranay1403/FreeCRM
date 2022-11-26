@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -36,21 +38,21 @@ public class TestCase4 extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Assert.assertTrue(cp.visiabilityofCreate());
+		AssertJUnit.assertTrue(cp.visiabilityofCreate());
 		cp.clickonCreate();
-		Assert.assertTrue(cp.visiabilityofTitle());
+		AssertJUnit.assertTrue(cp.visiabilityofTitle());
 		cp.clickonTitle();
 		cp.enterTitle();
-		Assert.assertTrue(cp.visiabilityofCategory());
+		AssertJUnit.assertTrue(cp.visiabilityofCategory());
 		cp.clickonCategory();
-		Assert.assertTrue(cp.visiabilityofTags());
+		AssertJUnit.assertTrue(cp.visiabilityofTags());
 		cp.clickonTag();
 		cp.enterTags();
 		pressEnter(driver, cp.tag());
-		Assert.assertTrue(cp.visiabilityofDiscription());
+		AssertJUnit.assertTrue(cp.visiabilityofDiscription());
 		cp.clickonDescription();
 		cp.enterDescription();
-		Assert.assertTrue(cp.visiabilityofLocation());
+		AssertJUnit.assertTrue(cp.visiabilityofLocation());
 		cp.clickonLocation();
 		cp.enterLocation();
 //     	Assert.assertTrue(cp.visiabilityofAllday());
@@ -59,31 +61,31 @@ public class TestCase4 extends BaseClass {
 		cp.clickonDeal();
 		cp.enterDealdetails();
 		pressEnter(driver, cp.Deal());
-		Assert.assertTrue(cp.visiabilityofCase());
+		AssertJUnit.assertTrue(cp.visiabilityofCase());
 		cp.clickonCase();
 		cp.enterCases();
 		pressEnter(driver, cp.Case());
-		Assert.assertTrue(cp.visiabilityofTask());
+		AssertJUnit.assertTrue(cp.visiabilityofTask());
 		cp.clickonTask();
 		cp.enterTaskDetails();
 		pressEnter(driver, cp.Task());
-		Assert.assertTrue(cp.visiabilityofReminder());
+		AssertJUnit.assertTrue(cp.visiabilityofReminder());
 		cp.clickonReminder();
 		cp.enterReminderTime();
-		Assert.assertTrue(cp.visiabilityofParticipant());
+		AssertJUnit.assertTrue(cp.visiabilityofParticipant());
 		cp.clickonParticipants();
 		cp.enterParticipants();
 		pressEnter(driver, cp.Participants());
-		Assert.assertTrue(cp.visiabilityofCompany());
+		AssertJUnit.assertTrue(cp.visiabilityofCompany());
 		cp.clickonCompany();
 		cp.enterCompany();
 		pressEnter(driver, cp.Company());
 //		Thread.sleep(2000);
-		Assert.assertTrue(cp.visiabilityofIndentifier());
+		AssertJUnit.assertTrue(cp.visiabilityofIndentifier());
 		cp.clickonIdentifier();
 		cp.enterIdentifier();
 		pressEnter(driver, cp.Identifier());
-		Assert.assertTrue(cp.visiabilityofSave());
+		AssertJUnit.assertTrue(cp.visiabilityofSave());
 		cp.clickonSave();
 	
 		Thread.sleep(5000);

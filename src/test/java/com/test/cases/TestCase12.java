@@ -1,6 +1,7 @@
 package com.test.cases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.baseclass.BaseClass;
 import com.page.classes.CreateNewCasePage;

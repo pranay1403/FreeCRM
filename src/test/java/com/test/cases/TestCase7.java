@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -29,37 +31,37 @@ public class TestCase7 extends BaseClass {
 	@Test(priority=2,description="validate buttons")
 	public void validateNextbtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.visiabilityOfNextmonthbtn());
-		Assert.assertTrue(bcp.clickabilityOfNextmonthbtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfNextmonthbtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfNextmonthbtn());
 		bcp.clickonNextbtn();
 		
 	}
 	@Test(priority=3,description="validate buttons")
 	public void validatePreviousbtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.visiabilityOfPreviousmonthbtn());
-		Assert.assertTrue(bcp.clickabilityOfPreviousmonthbtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfPreviousmonthbtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfPreviousmonthbtn());
 		bcp.clickOnPreviousbtn();
 	}
 	@Test(priority=4,description="validate buttons")
 	public void validateTodaybtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.visiabilityOfTodaybtn());
-		Assert.assertTrue(bcp.clickabilityOfTodaybtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfTodaybtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfTodaybtn());
 		bcp.clickabilityOfTodaybtn();
 		backword();
 	}
 	@Test(priority=5,description="validate buttons")
 	public void validateMonthbtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.visiabilityOfMonthbtn());
-		Assert.assertTrue(bcp.clickabilityOfMonthbtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfMonthbtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfMonthbtn());
 	}
 	@Test(priority=6,description="validate buttons")
 	public void validateWeekbtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.clickabilityOfWeekbtn());
-		Assert.assertTrue(bcp.visiabilityOfWeekbtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfWeekbtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfWeekbtn());
 		bcp.clickonWeek();
 		backword();
 		
@@ -67,16 +69,16 @@ public class TestCase7 extends BaseClass {
 	@Test(priority=7,description="validate buttons")
 	public void validateDaybtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.visiabilityOfDaybtn());
-		Assert.assertTrue(bcp.clickabilityOfDaybtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfDaybtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfDaybtn());
 		bcp.clickonDay();
 		backword();
 	}
 	@Test(priority=8,description="validate buttons")
 	public void validateAgendabtn() {
 		bcp=new BigCalanderHome(driver);
-		Assert.assertTrue(bcp.visiabilityOfAgendabtn());
-		Assert.assertTrue(bcp.clickabilityOfAgendabtn());
+		AssertJUnit.assertTrue(bcp.visiabilityOfAgendabtn());
+		AssertJUnit.assertTrue(bcp.clickabilityOfAgendabtn());
 		bcp.clickonAgenda();
 		backword();
 		

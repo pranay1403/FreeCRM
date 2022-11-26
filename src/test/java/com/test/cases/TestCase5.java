@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -32,31 +34,31 @@ public class TestCase5 extends BaseClass {
 public void Validition() {
 cp= new ContactPage(driver);
 //cp.Gettitle();
-Assert.assertTrue(cp.Clickabilityofaction());
-Assert.assertTrue(cp.ClickabilityofCategory());	
-Assert.assertTrue(cp.ClickabilityofEmail());	
-Assert.assertTrue(cp.Clickabilityofcreate());
-Assert.assertTrue(cp.Clickabilityofexport());
-Assert.assertTrue(cp.ClickabilityofName());
-Assert.assertTrue(cp.Clickabilityofrightmark());
-Assert.assertTrue(cp.ClickabilityofShowfilter());
-Assert.assertTrue(cp.ClickabilityofStatus());
-Assert.assertTrue(cp.ClickabilityofView());
-Assert.assertTrue(cp.Visibilityofaction());
-Assert.assertTrue(cp.VisibilityofAdress());
-Assert.assertTrue(cp.VisibilityofCategory());
-Assert.assertTrue(cp.Visibilityofcreate());
-Assert.assertTrue(cp.VisibilityofEmail());
-Assert.assertTrue(cp.Visibilityofexport());
-Assert.assertTrue(cp.Visibilityofname());
-Assert.assertTrue(cp.VisibilityofOne());
-Assert.assertTrue(cp.VisibilityofOption());
-Assert.assertTrue(cp.VisibilityofPhone());
-Assert.assertTrue(cp.VisibilityofPhone());
-Assert.assertTrue(cp.VisibilityofRightmark());
-Assert.assertTrue(cp.VisibilityofShowfilter());
-Assert.assertTrue(cp.VisibilityofStatus());
-Assert.assertTrue(cp.VisibilityofView());
+AssertJUnit.assertTrue(cp.Clickabilityofaction());
+AssertJUnit.assertTrue(cp.ClickabilityofCategory());	
+AssertJUnit.assertTrue(cp.ClickabilityofEmail());	
+AssertJUnit.assertTrue(cp.Clickabilityofcreate());
+AssertJUnit.assertTrue(cp.Clickabilityofexport());
+AssertJUnit.assertTrue(cp.ClickabilityofName());
+AssertJUnit.assertTrue(cp.Clickabilityofrightmark());
+AssertJUnit.assertTrue(cp.ClickabilityofShowfilter());
+AssertJUnit.assertTrue(cp.ClickabilityofStatus());
+AssertJUnit.assertTrue(cp.ClickabilityofView());
+AssertJUnit.assertTrue(cp.Visibilityofaction());
+AssertJUnit.assertTrue(cp.VisibilityofAdress());
+AssertJUnit.assertTrue(cp.VisibilityofCategory());
+AssertJUnit.assertTrue(cp.Visibilityofcreate());
+AssertJUnit.assertTrue(cp.VisibilityofEmail());
+AssertJUnit.assertTrue(cp.Visibilityofexport());
+AssertJUnit.assertTrue(cp.Visibilityofname());
+AssertJUnit.assertTrue(cp.VisibilityofOne());
+AssertJUnit.assertTrue(cp.VisibilityofOption());
+AssertJUnit.assertTrue(cp.VisibilityofPhone());
+AssertJUnit.assertTrue(cp.VisibilityofPhone());
+AssertJUnit.assertTrue(cp.VisibilityofRightmark());
+AssertJUnit.assertTrue(cp.VisibilityofShowfilter());
+AssertJUnit.assertTrue(cp.VisibilityofStatus());
+AssertJUnit.assertTrue(cp.VisibilityofView());
 }
 @Test(priority=4)
 public void ClickonCreat()	{

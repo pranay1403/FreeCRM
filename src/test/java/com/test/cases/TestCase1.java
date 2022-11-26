@@ -1,5 +1,7 @@
 package com.test.cases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,14 +18,14 @@ public class TestCase1 extends BaseClass {
 	@Test(description = "validate freeCrm homepage", priority = 1)
 	public void ValidateLogo() {
 	    hp = new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOflogo());
+		AssertJUnit.assertTrue(hp.visiabilityOflogo());
 		hp.clickonlogo();
         backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 2)
 	public void ValidateLogin() {
 		hp=new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOfLogin());
+		AssertJUnit.assertTrue(hp.visiabilityOfLogin());
 		hp.clickonLogIn();
 		backword();
 		
@@ -31,35 +33,35 @@ public class TestCase1 extends BaseClass {
 	@Test(description = "validate freeCrm homepage", priority = 3)
 	public void ValidateSignUp() {
 		hp=new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOfSignUp());
+		AssertJUnit.assertTrue(hp.visiabilityOfSignUp());
 		hp.clickonSignUp();
 		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 4)
 	public void ValidateCustomer() {
 		hp=new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOfCustomer());
+		AssertJUnit.assertTrue(hp.visiabilityOfCustomer());
 		hp.clickonCustomer();
 		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 5)
 	public void ValidateContactUs() {
 		hp=new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOfcontactus());
+		AssertJUnit.assertTrue(hp.visiabilityOfcontactus());
 		hp.clickonContactUs();
 		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 6)
 	public void ValidateFeatures() {
 		hp=new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOfFeatures());
+		AssertJUnit.assertTrue(hp.visiabilityOfFeatures());
 		hp.clickonFeatures();
 		backword();
 	}
 	@Test(description = "validate freeCrm homepage", priority = 7)
 	public void ValidatePricing() {
 		hp=new HomePage(driver);
-		Assert.assertTrue(hp.visiabilityOfPricing());
+		AssertJUnit.assertTrue(hp.visiabilityOfPricing());
 		hp.clickonpricing();
 		backword();
 	}
