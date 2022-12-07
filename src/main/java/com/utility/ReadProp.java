@@ -47,5 +47,20 @@ public class ReadProp {
 		String v=prop.getProperty("ExpectedDate");
 		return v;
 	}
-
+	public String username1() {
+		String username=prop.getProperty("username1");
+		return username;
+	}
+	public String password1() {
+		String password=prop.getProperty("password1");
+		return password;
+	}
+	public String username2() {
+		String username=prop.getProperty("username");
+		return username;
+	}
+	public String password2() {
+		String password=prop.getProperty("password");
+		return password;
+	}
 }

@@ -62,7 +62,7 @@ public class BaseClass {
 
 		// step2: call getScreenshotAs method to create image file
 
-		String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
+		String timestamp = new SimpleDateFormat("yyyy.MM.DD.hh.mm.ss").format(new Date());
 
 		File src = screenshot.getScreenshotAs(OutputType.FILE);
 

@@ -79,5 +79,11 @@ public class LoginPage {
 		email.sendKeys(username);
 		password.sendKeys(pass);
 	}
+	public void Enterusername(String username) {
+		email.sendKeys(username);
+	}
+	public void Enterpassword(String pass) {
+		password.sendKeys(pass);
+	}
 
 }
